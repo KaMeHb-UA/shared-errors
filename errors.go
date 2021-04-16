@@ -1,4 +1,4 @@
-package errors
+package sharederrs
 
 import "github.com/go-stack/stack"
 
