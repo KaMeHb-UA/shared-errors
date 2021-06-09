@@ -32,7 +32,7 @@ func (l *ExtendedLog) write(logLevel string, errInfo string) {
 	if errInfo == "" {
 		return
 	}
-	log.Println(logLevel + ": " + errInfo)
+	log.Println("[" + logLevel + "] " + errInfo)
 	if logLevel == LogLevelFatal {
 		os.Exit(1)
 	}
